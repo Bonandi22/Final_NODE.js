@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="admin.css">
+    <title>Document</title>
+</head>
+<body>
+   <div id="container">
+    <div id="menu">
+
+        <ul>
+           
+            <li><a href="/sair">LOGOUT</a></li>
+            <li><a href="/usuarios">CADASTRO DE USUARIOS</a></li>
+            <li><a href="#">LISTAR USUÁRIOS</a></li>
+            <li><a href="#">HOME</a></li>
+        </ul>
+    </div>
+    <div id="conteudo">
+	<form action="/usuarios" method="post">
+        <label>Nome:</label>
+        <input type="text" name="nome"  id="nome">
+        <br><br>
+        <label>Usuário:</label>
+        <input type="text" name="usuario"  id="usuario">
+        <br><br>
+        <label>Senha:</label>
+        <input type="text" name="senha"  id="senha">
+        <br><br>
+        <label>Tipo:</label>
+        <input type="text" name="tipo"  id="tipo">
+        <br><br>
+        <label>Status:</label>
+        <input type="text" name="status"  id="status">
+        <br><br>
+        <input type="submit" value="Cadastrar">
+    </form>
+
+	</div>
+   </div>
+    
+</body>
+</html>

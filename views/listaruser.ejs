@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+<body><CENTER>
+    <table border="1">
+        <TR>
+            <td width="200" >NOME</td>
+            <td width="200" >USUARIO</td>
+            <td width="200" >SENHA</td>
+            <td width="200" >TIPO</td>
+            <td width="200" >STATUS</td>
+            <td width="200" >EDITAR</td>
+            <td width="200" >EXCLUIR</td>
+        </TR>
+<% for(var i = 0; i < usuarios.length; i++){ %>
+        <TR>
+            <td width="200" ><%= usuarios[i].nome %></td>
+            <td width="200" ><%= usuarios[i].usuario %></td>
+            <td width="200" ><%= usuarios[i].senha %></td>
+            <td width="200" ><%= usuarios[i].tipo %></td>
+            <td width="200" ><%= usuarios[i].status %></td>
+            <td width="200" ><a href="/usuario/<%= usuarios[i].id %>">EDITAR</a></td>
+            <td width="200" ><a href="/excluir/<%= usuarios[i].id %>">EXCLUIR</a></td>
+        </TR>
+    <% } %>
+    </table></CENTER>
+</body>
+</html>
